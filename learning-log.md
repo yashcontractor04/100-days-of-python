@@ -23,3 +23,10 @@
 * **Concepts:** First-class functions, dispatch table pattern, stateful chained execution.
 * **Key Technique:** Mapped mathematical operator strings directly to function references in a dictionary (`operations[symbol](n1, n2)`), eliminating `if/elif` branches.
 * **Talking Point:** Implemented the dispatch table pattern using first-class functions to achieve clean, extensible $O(1)$ operation routing and state chaining.
+
+---
+
+### Day 11: Blackjack Capstone (CLI)
+* **Concepts:** Complex state machines, sentinel values (`0` for natural Blackjack), rule-based decision trees.
+* **Key Technique:** Managed dynamic card values by converting Aces from `11` to `1` in-place when totals exceed 21.
+* **Talking Point:** Modeled asymmetric game loops and dealer AI constraints through modular helper functions and deterministic score evaluation.
