@@ -9,3 +9,5 @@
 | Day 10 | [CLI Calculator](./day-10-calculator) | `Python`, `First-Class Functions`, `Dispatch Pattern` | ✅ Done |
 
 | Day 11 | [Blackjack Capstone](./day-11-blackjack) | `Python`, `Game Logic`, `State Evaluation` | ✅ Done |
+
+| Day 12 | [Number Guessing Game](./day-12-number-guessing) | `Control Flow`, `Game Loops`, `Scoping` | ✅ Done |
