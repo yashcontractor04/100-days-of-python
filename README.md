@@ -1,6 +1,6 @@
 # 100-days-of-python
 
-| Day 07 | [Hangman CLI Game](./day-07-hangman) | `Python`, `State Management`, `Modular Imports` | ✅ Done |
+| Day 07 | [Hangman CLI Game](./Day\ 07/task) | `Python`, `State Management`, `Modular Imports` | ✅ Done |
 
 | Day 08 | [Caesar Cipher CLI](./day-08-caesar-cipher) | `Python`, `Algorithms`, `Modulo Arithmetic` | ✅ Done |
 
