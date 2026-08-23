@@ -37,3 +37,10 @@
 * **Concepts:** Scope management, loop counters, conditional termination branches.
 * **Key Technique:** Configured stateful attempt counters mapped to user difficulty tiers (`easy` / `hard`).
 * **Talking Point:** Implemented numeric binary-search feedback loops with strict counter boundary conditions.
+
+---
+
+### Day 14: Higher Lower Game (CLI)
+* **Concepts:** Data extraction from record collections, state propagation, defensive key lookup.
+* **Key Technique:** Rolled over `B` to next comparison entity `A` to maintain continuous stream flow.
+* **Talking Point:** Modeled round-based comparison logic using structured dictionary datasets and dynamic CLI feedback.
