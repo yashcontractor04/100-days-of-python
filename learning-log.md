@@ -30,3 +30,10 @@
 * **Concepts:** Complex state machines, sentinel values (`0` for natural Blackjack), rule-based decision trees.
 * **Key Technique:** Managed dynamic card values by converting Aces from `11` to `1` in-place when totals exceed 21.
 * **Talking Point:** Modeled asymmetric game loops and dealer AI constraints through modular helper functions and deterministic score evaluation.
+
+---
+
+### Day 12: Number Guessing Game (CLI)
+* **Concepts:** Scope management, loop counters, conditional termination branches.
+* **Key Technique:** Configured stateful attempt counters mapped to user difficulty tiers (`easy` / `hard`).
+* **Talking Point:** Implemented numeric binary-search feedback loops with strict counter boundary conditions.
