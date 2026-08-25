@@ -44,3 +44,10 @@
 * **Concepts:** Data extraction from record collections, state propagation, defensive key lookup.
 * **Key Technique:** Rolled over `B` to next comparison entity `A` to maintain continuous stream flow.
 * **Talking Point:** Modeled round-based comparison logic using structured dictionary datasets and dynamic CLI feedback.
+
+---
+
+### Day 15: Coffee Machine Simulation (CLI)
+* **Concepts:** State mutation, transaction validation, nested dictionaries.
+* **Key Technique:** Evaluated multi-ingredient availability against current resources before initiating coin transactions to prevent state corruption.
+* **Talking Point:** Implemented transactional state handling by decoupling resource validation, financial computation, and inventory deduction.
