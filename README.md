@@ -13,3 +13,5 @@
 | Day 12 | [Number Guessing Game](./Day%2012/Number%20Guessing%20Project) | `Control Flow`, `Game Loops`, `Scoping` | ✅ Done |
 
 | Day 14 | [Higher Lower Game](./Day%2014/Higher%20or%20Lower%20Project) | `Data Structures`, `Dict Operations`, `Game Loops` | ✅ Done |
+
+| Day 15 | [Coffee Machine Simulation](./Day%2015/Coffee%20Machine%20Project) | `State Mutation`, `Transaction Logic`, `Data Modeling` | ✅ Done |
