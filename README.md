@@ -15,3 +15,5 @@
 | Day 14 | [Higher Lower Game](./Day%2014/Higher%20or%20Lower%20Project) | `Data Structures`, `Dict Operations`, `Game Loops` | ✅ Done |
 
 | Day 15 | [Coffee Machine Simulation](./Day%2015/Coffee%20Machine%20Project) | `State Mutation`, `Transaction Logic`, `Data Modeling` | ✅ Done |
+
+| Day 16 | [OOP Coffee Machine](./day-16-oop-coffee-machine) | `OOP`, `Encapsulation`, `Modularity` | ✅ Done |
