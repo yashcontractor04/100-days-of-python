@@ -51,3 +51,10 @@
 * **Concepts:** State mutation, transaction validation, nested dictionaries.
 * **Key Technique:** Evaluated multi-ingredient availability against current resources before initiating coin transactions to prevent state corruption.
 * **Talking Point:** Implemented transactional state handling by decoupling resource validation, financial computation, and inventory deduction.
+
+---
+
+### Day 16: OOP Coffee Machine
+* **Concepts:** Object-Oriented Programming (OOP), encapsulation, Separation of Concerns (SoC).
+* **Key Technique:** Refactored procedural logic into specialized domain models (`CoffeeMaker`, `MoneyMachine`, `Menu`), making the main loop a clean orchestrator.
+* **Talking Point:** Applied OOP principles and encapsulation to isolate resource inventory, monetary transactions, and menu lookups into maintainable, testable classes.
