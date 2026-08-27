@@ -16,4 +16,4 @@
 
 | Day 15 | [Coffee Machine Simulation](./Day%2015/Coffee%20Machine%20Project) | `State Mutation`, `Transaction Logic`, `Data Modeling` | ✅ Done |
 
-| Day 16 | [OOP Coffee Machine](./day-16-oop-coffee-machine) | `OOP`, `Encapsulation`, `Modularity` | ✅ Done |
+| Day 16 | [OOP Coffee Machine](./Day-16/oop-coffee-machine-start) | `OOP`, `Encapsulation`, `Modularity` | ✅ Done |
