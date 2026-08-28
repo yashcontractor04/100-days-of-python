@@ -58,3 +58,10 @@
 * **Concepts:** Object-Oriented Programming (OOP), encapsulation, Separation of Concerns (SoC).
 * **Key Technique:** Refactored procedural logic into specialized domain models (`CoffeeMaker`, `MoneyMachine`, `Menu`), making the main loop a clean orchestrator.
 * **Talking Point:** Applied OOP principles and encapsulation to isolate resource inventory, monetary transactions, and menu lookups into maintainable, testable classes.
+
+---
+
+### Day 17: CLI Quiz Game
+* **Concepts:** Data modeling, OOP orchestration, stateful queue processing.
+* **Key Technique:** Deserialized raw dictionary records into dedicated `Question` model instances passed to a `QuizBrain` driver.
+* **Talking Point:** Separated domain data representations from lifecycle management to achieve a modular, reusable quiz execution engine.
