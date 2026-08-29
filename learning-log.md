@@ -65,3 +65,10 @@
 * **Concepts:** Data modeling, OOP orchestration, stateful queue processing.
 * **Key Technique:** Deserialized raw dictionary records into dedicated `Question` model instances passed to a `QuizBrain` driver.
 * **Talking Point:** Separated domain data representations from lifecycle management to achieve a modular, reusable quiz execution engine.
+
+---
+
+### Day 18: Hirst Dot Painting Generator
+* **Concepts:** 2D canvas coordinates, RGB color space (`colormode(255)`), nested iteration for 2D grids.
+* **Key Technique:** Used `screen.setworldcoordinates()` and `tim.teleport()` for clean row-by-row coordinate resets without drawing stroke artifacts.
+* **Talking Point:** Structured 2D coordinate canvas rendering using nested loops and modular drawing routines.
