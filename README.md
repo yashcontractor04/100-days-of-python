@@ -19,3 +19,5 @@
 | Day 16 | [OOP Coffee Machine](./Day-16/oop-coffee-machine-start) | `OOP`, `Encapsulation`, `Modularity` | Done |
 
 | Day 17 | [Quiz Game](./Day-17/quiz-game-start) | `OOP`, `Data Modeling`, `State Progression` | Done |
+
+| Day 18 | [Hirst Painting Generator](./Day-18/hirst-painting) | `Turtle Graphics`, `2D Coordinates`, `RGB Palette` | Done |
