@@ -21,3 +21,5 @@
 | Day 17 | [Quiz Game](./Day-17/quiz-game-start) | `OOP`, `Data Modeling`, `State Progression` | Done |
 
 | Day 18 | [Hirst Painting Generator](./Day-18/hirst-painting) | `Turtle Graphics`, `2D Coordinates`, `RGB Palette` | Done |
+
+| Day 19 | [Turtle Race](./Day-19/) | `Turtle Graphics`, `Object State`, `Game Loop` | Done |
