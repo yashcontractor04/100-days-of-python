@@ -72,3 +72,12 @@
 * **Concepts:** 2D canvas coordinates, RGB color space (`colormode(255)`), nested iteration for 2D grids.
 * **Key Technique:** Used `screen.setworldcoordinates()` and `tim.teleport()` for clean row-by-row coordinate resets without drawing stroke artifacts.
 * **Talking Point:** Structured 2D coordinate canvas rendering using nested loops and modular drawing routines.
+
+---
+
+### Day 19: Turtle Race Game
+* **Concepts:** Object instances, instance state, coordinate boundary collision, GUI dialogs.
+* **Key Technique:** Maintained a list of independent `Turtle` instances in a step-by-step game loop that tracks real-time x-coordinates against the finish line.
+* **Talking Point:** Demonstrated how multiple objects created from the same class blueprint maintain isolated internal states (position, color, speed).
+
+---
