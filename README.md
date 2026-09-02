@@ -24,4 +24,4 @@
 
 | Day 19 | [Turtle Race](./Day-19/) | `Turtle Graphics`, `Object State`, `Game Loop` | Done |
 
-| Day 20 | [Classic Snake Game](./Day-20/snake-game) | `OOP`, `Class Inheritance`, `File I/O`, `Turtle Graphics` | Done |
+| Day 20 | [Classic Snake Game](./Day-20/%20snake-game) | `OOP`, `Class Inheritance`, `File I/O`, `Turtle Graphics` | Done |
