@@ -23,3 +23,5 @@
 | Day 18 | [Hirst Painting Generator](./Day-18/hirst-painting) | `Turtle Graphics`, `2D Coordinates`, `RGB Palette` | Done |
 
 | Day 19 | [Turtle Race](./Day-19/) | `Turtle Graphics`, `Object State`, `Game Loop` | Done |
+
+| Day 20 | [Classic Snake Game](./Day-20/snake-game) | `OOP`, `Class Inheritance`, `File I/O`, `Turtle Graphics` | Done |
