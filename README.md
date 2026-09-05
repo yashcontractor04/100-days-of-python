@@ -27,3 +27,5 @@
 | Day 20 | [Classic Snake Game](./Day-20/%20snake_game) | `OOP`, `Class Inheritance`, `File I/O`, `Turtle Graphics` | Done |
 
 | Day 22 | [Pong Arcade Game](./Day-22/pong-game) | `OOP`, `Kinematics`, `2-Player Events`, `Turtle Graphics` | Done |
+
+| Day 23 | [Turtle Crossing](./Day-23/turtle-crossing) | `OOP`, `Procedural Spawning`, `Difficulty Scaling`, `Turtle Graphics` | Done |
