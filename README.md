@@ -29,3 +29,5 @@
 | Day 22 | [Pong Arcade Game](./Day-22/pong-game) | `OOP`, `Kinematics`, `2-Player Events`, `Turtle Graphics` | Done |
 
 | Day 23 | [Turtle Crossing](./Day-23/turtle-crossing) | `OOP`, `Procedural Spawning`, `Difficulty Scaling`, `Turtle Graphics` | Done |
+
+| Day 25 | [U.S. States Game](./Day-25/us-states-game) | `Pandas`, `Data Analysis`, `Turtle GUI`, `File Export` | Done |
