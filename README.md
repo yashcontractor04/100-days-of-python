@@ -32,4 +32,6 @@
 
 | Day 25 | [U.S. States Game](./Day-25/us-states-game) | `Pandas`, `Data Analysis`, `Turtle GUI`, `File Export` | Done |
 
-| Day 28 | [Pomodoro Timer](./Day-28/pomodoro) | `Tkinter`, `Event Loop (after)`, `Canvas Rendering`, `macOS Subprocess` | ✅ Done |
+| Day 28 | [Pomodoro Timer](./Day-28/pomodoro) | `Tkinter`, `Event Loop (after)`, `Canvas Rendering`, `macOS Subprocess` | Done |
+
+| Day 29 | [Password Manager](./Day-29/password-manager) | `Tkinter`, `JSON`, `Exception Handling`, `pyperclip` | Done |
