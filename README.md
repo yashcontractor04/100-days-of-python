@@ -37,3 +37,5 @@
 | Day 29 | [Password Manager](./Day-29/password-manager) | `Tkinter`, `JSON`, `Exception Handling`, `pyperclip` | Done |
 
 | Day 31 | [Flash Card Project](./Day-31/flash-card-project) | `Tkinter`, `Pandas`, `Event Loops`, `File Persistence` | Done |
+
+| Day 32 | [Automated Birthday Wisher](./Day-32/birthday-wisher) | `SMTP`, `smtplib`, `Pandas`, `datetime`, `dotenv` | Done |
