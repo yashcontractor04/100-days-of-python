@@ -14,3 +14,5 @@ An automated email dispatch system using Python's `smtplib`, `datetime`, and `pa
    ```text
    MY_EMAIL=your_email@gmail.com
    PASSWORD=your_google_app_password
+3. Run the script:
+   `python main.py`
