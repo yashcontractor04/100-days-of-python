@@ -48,3 +48,6 @@ if not matches.empty:
             connection.login(user=MY_EMAIL, password=PASSWORD)
             connection.sendmail(from_addr=MY_EMAIL, to_addrs=person["email"], message=email_message.encode("utf-8"))
             print(f"Birthday greeting successfully dispatched to {person['name']}.")
+
+else:
+    print("No birthdays registered for today.")
