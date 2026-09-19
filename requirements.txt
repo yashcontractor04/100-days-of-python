@@ -1,0 +1,6 @@
+pandas
+requests
+python-dotenv
+pyperclip
+beautifulsoup4
+spotipy
