@@ -2,8 +2,8 @@ name: Day 32 - Birthday Wisher
 
 on:
   schedule:
-    # Runs at 07:00 UTC daily (09:00 CEST Berlin time)
-    - cron: '0 7 * * *'
+    # Runs at 05:00 UTC daily (07:00 CEST Berlin time)
+    - cron: '0 5 * * *'
   workflow_dispatch:
 
 jobs:
@@ -26,12 +26,12 @@ jobs:
 
       - name: Recreate private birthdays.csv from secret
         run: |
-          echo "${{ secrets.BIRTHDAYS_CSV_DATA }}" > day-32-birthday-wisher/birthdays.csv
+          echo "${{ secrets.BIRTHDAYS_CSV_DATA }}" > Day-32/birthday-wisher/birthdays.csv
 
       - name: Run script
         env:
           MY_EMAIL: ${{ secrets.MY_EMAIL }}
           PASSWORD: ${{ secrets.MY_EMAIL_PASSWORD }}
         run: |
-          cd day-32-birthday-wisher
+          cd Day-32/birthday-wisher
           python main.py
