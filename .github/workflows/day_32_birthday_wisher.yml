@@ -31,7 +31,7 @@ jobs:
       - name: Run script
         env:
           MY_EMAIL: ${{ secrets.MY_EMAIL }}
-          PASSWORD: ${{ secrets.MY_EMAIL_PASSWORD }}
+          MY_EMAIL_PASSWORD: ${{ secrets.MY_EMAIL_PASSWORD }}
         run: |
           cd Day-32/birthday-wisher
           python main.py
