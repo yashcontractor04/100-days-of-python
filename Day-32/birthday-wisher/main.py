@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 MY_EMAIL = os.getenv("MY_EMAIL")
-PASSWORD = os.getenv("PASSWORD")
+PASSWORD = os.getenv("MY_EMAIL_PASSWORD")
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
