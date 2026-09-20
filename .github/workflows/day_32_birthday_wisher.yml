@@ -27,24 +27,6 @@ jobs:
       - name: Recreate private birthdays.csv from secret
         run: |
           echo "${{ secrets.BIRTHDAYS_CSV_DATA }}" > Day-32/birthday-wisher/birthdays.csv
-
-      - name: Validate email config
-        env:
-          MY_EMAIL: ${{ secrets.MY_EMAIL }}
-          MY_EMAIL_PASSWORD: ${{ secrets.MY_EMAIL_PASSWORD }}
-        run: |
-          test -n "$MY_EMAIL" || {
-            echo "MY_EMAIL is empty or unavailable"
-            exit 1
-          }
-      
-          test -n "$MY_EMAIL_PASSWORD" || {
-            echo "MY_EMAIL_PASSWORD is empty or unavailable"
-            exit 1
-          }
-      
-          echo "Email account: $MY_EMAIL"
-          echo "Password length: ${#MY_EMAIL_PASSWORD}"
           
       - name: Run script
         env:
