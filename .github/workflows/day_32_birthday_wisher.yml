@@ -47,6 +47,9 @@ jobs:
           echo "Password length: ${#MY_EMAIL_PASSWORD}"
           
       - name: Run script
+        env:
+            MY_EMAIL: ${{ secrets.MY_EMAIL }}
+            MY_EMAIL_PASSWORD: ${{ secrets.MY_EMAIL_PASSWORD }}
         run: |
           cd Day-32/birthday-wisher
           python main.py
