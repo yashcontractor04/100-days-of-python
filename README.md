@@ -41,3 +41,5 @@
 | Day 32 | [Automated Birthday Wisher](./Day-32/birthday-wisher) | `SMTP`, `smtplib`, `Pandas`, `datetime`, `dotenv` | Done |
 
 | Day 33 | [ISS Overhead Notifier](./Day-33/iss-overhead-notifier) | `API`, `requests`, `datetime`, `smtplib`, `dotenv` | Done |
+
+| Day 34 | [Quizzler App](./Day-34/quizzler-app-api) | `API`, `requests`, `Tkinter GUI`, `html unescape` | Done |
