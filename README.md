@@ -43,3 +43,5 @@
 | Day 33 | [ISS Overhead Notifier](./Day-33/iss-overhead-notifier) | `API`, `requests`, `datetime`, `smtplib`, `dotenv` | Done |
 
 | Day 34 | [Quizzler App](./Day-34/quizzler-app-api) | `API`, `requests`, `Tkinter GUI`, `html unescape` | Done |
+
+| Day 35 | [Rain Alert Notifier](./Day-35/rain-alert) | `API`, `requests`, `Telegram Bot API`, `OpenWeatherMap` | Done |
