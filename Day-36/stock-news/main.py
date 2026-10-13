@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration constants
-STOCK = "TSLA"
-COMPANY_NAME = "Tesla Inc"
+STOCK = "PLTR"
+COMPANY_NAME = "Palantir"
 PERCENT_THRESHOLD = 5.0
 
 # API endpoints
@@ -79,7 +79,7 @@ def check_stock_fluctuation() -> None:
         return
 
     daily_data = data["Time Series (Daily)"]
-    # Alpha Vantagereturns chronological dates as keys; extracting top 2 recent sessions
+    # Alpha Vantage returns chronological dates as keys; extracting top 2 recent sessions
     time_series_list = list(daily_data.values())
     yesterday_close = float(time_series_list[0]["4. close"])
     day_before_close = float(time_series_list[1]["4. close"])
