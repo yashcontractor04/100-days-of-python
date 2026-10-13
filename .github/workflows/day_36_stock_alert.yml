@@ -31,5 +31,5 @@ jobs:
           TELEGRAM_STOCK_BOT_TOKEN: ${{ secrets.TELEGRAM_STOCK_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          cd Day-36/stock-alert
+          cd Day-36/stock-news
           python main.py
