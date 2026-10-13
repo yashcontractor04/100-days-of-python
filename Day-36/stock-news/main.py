@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration constants
-STOCK = "TSLA"
-COMPANY_NAME = "Tesla Inc"
+STOCK = "PLTR"
+COMPANY_NAME = "Palantir"
 PERCENT_THRESHOLD = 5.0
 
 # API endpoints
@@ -69,7 +69,7 @@ def check_stock_fluctuation() -> None:
         'apikey': STOCK_API_KEY,
     }
 
-    response = requests.get(NEWS_ENDPOINT, params=params)
+    response = requests.get(STOCK_ENDPOINT, params=params)
     response.raise_for_status()
     data = response.json()
 
@@ -79,7 +79,7 @@ def check_stock_fluctuation() -> None:
         return
 
     daily_data = data["Time Series (Daily)"]
-    # Alpha Vantagereturns chronological dates as keys; extracting top 2 recent sessions
+    # Alpha Vantage returns chronological dates as keys; extracting top 2 recent sessions
     time_series_list = list(daily_data.values())
     yesterday_close = float(time_series_list[0]["4. close"])
     day_before_close = float(time_series_list[1]["4. close"])
@@ -88,7 +88,7 @@ def check_stock_fluctuation() -> None:
     price_diff = yesterday_close - day_before_close
     percent_change = (price_diff / day_before_close) * 100
 
-    print(f"{STOCK} price changed by {percent_change:+.2f}% (Yesterday: {yesterday_close:+.2f}, Day Before: ${day_before_close:+.2f})")
+    print(f"{STOCK} price changed by {percent_change:+.2f}% (Yesterday: ${yesterday_close:.2f}, Day Before: ${day_before_close:.2f})")
 
     # Evaluate absolute percentage change against threshold
     if abs(percent_change) >= PERCENT_THRESHOLD:
