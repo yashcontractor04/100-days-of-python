@@ -45,3 +45,5 @@
 | Day 34 | [Quizzler App](./Day-34/quizzler-app-api) | `API`, `requests`, `Tkinter GUI`, `html unescape` | Done |
 
 | Day 35 | [Rain Alert Notifier](./Day-35/rain-alert) | `API`, `requests`, `Telegram Bot API`, `OpenWeatherMap` | Done |
+
+| Day 36 | [Stock Trading News Alert](./Day-36/stock-news) | `Alpha Vantage`, `NewsAPI`, `Telegram Bot API`, `requests` | Done |
