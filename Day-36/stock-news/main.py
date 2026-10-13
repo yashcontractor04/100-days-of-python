@@ -69,7 +69,7 @@ def check_stock_fluctuation() -> None:
         'apikey': STOCK_API_KEY,
     }
 
-    response = requests.get(NEWS_ENDPOINT, params=params)
+    response = requests.get(STOCK_ENDPOINT, params=params)
     response.raise_for_status()
     data = response.json()
 
