@@ -47,3 +47,5 @@
 | Day 35 | [Rain Alert Notifier](./Day-35/rain-alert) | `API`, `requests`, `Telegram Bot API`, `OpenWeatherMap` | Done |
 
 | Day 36 | [Stock Trading News Alert](./Day-36/stock-news) | `Alpha Vantage`, `NewsAPI`, `Telegram Bot API`, `requests` | Done |
+
+| Day 37 | [Pixela Habit Tracker](./Day-37/habit-tracker) | `API`, `requests`, `POST/PUT/DELETE`, `HTTP Headers` | Done |
