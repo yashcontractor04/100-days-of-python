@@ -16,5 +16,5 @@ An automated workout logging application built with Python, Nutritionix Natural 
    APP_ID=your_nutritionix_app_id
    API_KEY=your_nutritionix_api_key
    BEARER_TOKEN=your_sheety_bearer_token
-3. Run the script:
+3. Run the application:
    `python main.py`
