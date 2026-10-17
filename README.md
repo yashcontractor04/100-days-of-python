@@ -49,3 +49,5 @@
 | Day 36 | [Stock Trading News Alert](./Day-36/stock-news) | `Alpha Vantage`, `NewsAPI`, `Telegram Bot API`, `requests` | Done |
 
 | Day 37 | [Pixela Habit Tracker](./Day-37/habit-tracker) | `API`, `requests`, `POST/PUT/DELETE`, `HTTP Headers` | Done |
+
+| Day 38 | [Workout Tracker](./Day-38/workout-tracker) | `NLP API`, `Nutritionix`, `Sheety`, `Bearer Token`, `requests` | Done |
