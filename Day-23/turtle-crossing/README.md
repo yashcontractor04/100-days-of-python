@@ -1,11 +1,7 @@
-# Turtle Crossing (Frogger Clone)
-A desktop arcade game inspired by Frogger built with Python's Turtle graphics, featuring stochastic obstacle spawning, multi-level speed scaling, dynamic object pooling, and boundary/collision detection.
+# Day 23: Turtle Crossing
 
-### Tech / Concepts
-* Modular OOP design (`Player`, `CarManager`, `Scoreboard`)
-* Stochastic event throttling (`random.randint` tick gates)
-* Linear velocity scaling conditioned on stage progression
-* Proximity-based bounding box collision detection
+A simple Frogger-style game made with `turtle`. Press the Up arrow to walk the turtle to the top of the screen while cars drive across from the right. If you reach the top, you go up a level and the cars get faster. If you touch a car, the game is over.
 
-### Quickstart
-`python main.py`
+On about 1 out of every 6 frames a new car appears at a random height. Cars that drive off the left side of the screen are removed. The code is split into `player.py`, `car_manager.py` and `scoreboard.py`.
+
+To run it: `python main.py`

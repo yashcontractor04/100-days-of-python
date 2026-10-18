@@ -1,14 +1,12 @@
-# German-English Flashcard Memorization App
-A desktop flashcard learning tool developed using Python's `tkinter` and `pandas`. Uses Leitner-style spaced card flipping with automatic progress persistence to prioritize unlearned vocabulary from a comprehensive 10,000-word German dataset across sessions.
+# Day 31: Flash Cards
 
-### Tech / Concepts
-* Desktop interface architecture using `tkinter.Canvas` layer modifications
-* State scheduling with `window.after()` and `window.after_cancel()`
-* Tabular file ingestion and DataFrame mutation using `pandas`
-* Defensive local caching (`try/except FileNotFoundError`) to track user learning progress over 10,000 terms
+A flash card app for learning German words, made with `tkinter` and pandas. It shows a German word for 3 seconds, then flips the card to show the English word.
 
-### Quickstart
-1. Install requirements:
-   `pip install pandas`
-2. Run the application:
-   `python main.py`
+- The tick button means you know the word. It is removed from the pile and your progress is saved in `data/words_to_learn.csv`, so next time you carry on where you stopped.
+- The cross button means you don't know it yet, so the word stays in the pile.
+
+The words come from `data/deutsch_words.csv`, which has about 10,000 German words with English translations. They appear in random order.
+
+The app needs an `images` folder next to `main.py` with four pictures: `card_front.png`, `card_back.png`, `right.png` and `wrong.png`.
+
+To run it: `python main.py`

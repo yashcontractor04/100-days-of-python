@@ -1,14 +1,13 @@
-# Desktop GUI Password Manager & Generator
-A desktop password manager built with Python's `tkinter` interface toolkit. Features dynamic random password creation with system clipboard integration, structured JSON persistence, and defensive exception handling (`try`/`except`/`else`/`finally`) for data querying and updates.
+# Day 29: Password Manager
 
-### Tech / Concepts
-* Desktop GUI architecture with `tkinter` (Grid layout manager, Dialogs, Canvas)
-* Structured key-value disk persistence using the `json` module (`load`, `dump`, `update`)
-* Defensive file handling with `try`/`except`/`else`/`finally` blocks
-* System clipboard management via `pyperclip`
+A small `tkinter` app for making and saving passwords.
 
-### Quickstart
-1. Install dependencies:
-   `pip install pyperclip`
-2. Run the application:
-   `python main.py`
+- **Generate Password** makes a random password (a mix of letters, numbers and symbols) and copies it so you can paste it.
+- **Add** saves the website, email and password in a file called `data.json`.
+- **Search** looks up a website and shows the email and password saved for it.
+
+The passwords are saved as plain text with no encryption, so this is only a practice project. Don't use it for real passwords. `data.json` is listed in `.gitignore`, so it never gets uploaded to GitHub.
+
+The email box is filled in automatically with my email address. To change it, edit the line with `username_entry.insert` in `main.py`.
+
+To run it: `python main.py`

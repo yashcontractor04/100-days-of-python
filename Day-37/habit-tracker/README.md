@@ -1,18 +1,23 @@
-# Habit Tracker with Pixela API
-A console-based habit logging client built using Python's `requests` and the Pixela REST API. Demonstrates full HTTP lifecycle semantics (`POST`, `PUT`, `DELETE`) with custom HTTP header authentication (`X-USER-TOKEN`) to maintain an active activity graph.
+# Day 37: Habit Tracker
 
-### Tech / Concepts
-* REST HTTP request methods: `POST` (resource creation), `PUT` (state mutation), `DELETE` (removal)
-* Custom token authentication in headers via `X-USER-TOKEN`
-* Date formatting to ISO string tokens (`strftime('%Y%m%d')`)
-* Separation of API actions into isolated operational handlers
+Saves your daily habits to [Pixela](https://pixe.la), a website that draws a graph of your habits (a bit like the green squares on GitHub). The program talks to Pixela over the internet. There is one function for each kind of request:
 
-### Quickstart
-1. Install dependencies:
-   `pip install -r requirements.txt`
-2. Populate `.env`:
-   ```text
-   PIXELA_USERNAME=your_pixela_username
-   PIXELA_TOKEN=your_pixela_token
-3. Run the script
-   `python main.py`
+- `create_user()` and `create_graph()`: set up your account and your graph. You only need these once, and `main` doesn't call them.
+- `post_pixel()`: adds an entry for a date (a POST request)
+- `update_pixel()`: changes the entry for a date (a PUT request)
+- `delete_pixel()`: removes the entry for a date (a DELETE request)
+
+Your token is sent with every request so Pixela knows it is you.
+
+As it is, `python main.py` adds 2.5 hours for today to a graph called `graph1` ("Study Graph", measured in hours) and prints the link to the graph. To try the update and delete functions, remove the `#` from the lines at the bottom of the file.
+
+## Setup
+
+Create a file called `.env` in this folder:
+
+```text
+PIXELA_USERNAME=your_pixela_username
+PIXELA_TOKEN=your_pixela_token
+```
+
+The very first time, you also need to run `create_user()` and `create_graph()` once. For example, add them under `if __name__ == "__main__":`, run the file and then remove them again.

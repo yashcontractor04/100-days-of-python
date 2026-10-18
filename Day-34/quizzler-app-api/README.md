@@ -1,14 +1,11 @@
-# Quizzler Desktop GUI Quiz App
-A desktop trivia application built with Python's `tkinter` and Open Trivia DB API. Consumes REST endpoints dynamically based on user category and question-count configurations, unescapes HTML character entities, and delivers interactive visual feedback.
+# Day 34: Quizzler
 
-### Tech / Concepts
-* Dynamic API parameter querying using `requests`
-* HTML entity decoding with Python's standard `html.unescape`
-* Desktop UI rendering with `tkinter` dialogs, Canvas card layout, and `after()` state transitions
-* Strict UI interaction gating (disabling buttons during feedback delays)
+A true/false quiz app in a `tkinter` window. When it starts, it asks how many questions you want (1 to 50) and which category: `science` (Science: Computers) or `general` (General Knowledge). Then it gets the questions from the Open Trivia Database website. You don't need a key for it. The question card turns green when you are right and red when you are wrong.
 
-### Quickstart
-1. Install dependencies:
-   `pip install -r requirements.txt`
-2. Run the application:
-   `python main.py`
+- `data.py`: gets the questions from the website
+- `question_model.py` and `quiz_brain.py`: store the questions and keep track of progress and score
+- `ui.py`: the window
+
+The website sends some characters in a special code (for example `&quot;` instead of a quote mark). `quiz_brain.py` turns them back into normal text with `html.unescape`. The `images` folder has the pictures for the true and false buttons.
+
+You need an internet connection. To run it: `python main.py`

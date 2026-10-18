@@ -1,11 +1,9 @@
-# 2-Player Arcade Pong Game
-A desktop recreation of the classic arcade Pong game built using Python's `turtle` graphics module, featuring dual-player inputs, vector deflection logic, dynamic rally acceleration, and persistent scoreboard tracking.
+# Day 22: Pong
 
-### Tech / Concepts
-* Multi-class OOP design (`Paddle`, `Ball`, `Scoreboard`)
-* 2D kinematic vector reflection (`bounce_x`, `bounce_y`)
-* Dynamic loop rate modulation to increase rally difficulty
-* Coordinate-space bounding box collisions
+Two player Pong made with `turtle`. The left player uses W and S. The right player uses the Up and Down arrow keys.
 
-### Quickstart
-`python main.py`
+The ball bounces off the top and bottom walls and off the paddles. Every time it hits a paddle it gets faster. When someone scores, the ball goes back to the middle and the speed starts over.
+
+The code is split into three classes: `Paddle`, `Ball` and `Scoreboard`. The score is only kept while the game is open, and there is no winning score, so it goes on until you close the window.
+
+To run it: `python main.py`
