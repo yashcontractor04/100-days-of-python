@@ -39,8 +39,6 @@ def track_workout():
     }
 
     api_response = requests.post(NUTRITIONIX_URL, json=data_api, headers=api_headers)
-    # print("Status Code:", api_response.status_code)
-    # print("Response Body:", api_response.text)
     api_response.raise_for_status()
     result = api_response.json()
 
@@ -67,10 +65,8 @@ def track_workout():
         }
         sheety_response = requests.post(SHEETY_URL, json=data_workout, headers=sheety_headers)
         sheety_response.raise_for_status()
-        print(sheety_response.text)
+        print(f"Logged: {exercise['name'].title()} -> Sheety status {sheety_response.status_code}")
 
 
-
-
-
-
+if __name__ == "__main__":
+    track_workout()
