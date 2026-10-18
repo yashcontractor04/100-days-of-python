@@ -17,7 +17,7 @@ if difficulty == "easy":
 else:
     tries = 5
 
-while tries >= 0:
+while tries > 0:
     print(f"You have {tries} attempts remaining to guess the number.")
     guess = int(input("Make a guess: "))
     if guess < number:

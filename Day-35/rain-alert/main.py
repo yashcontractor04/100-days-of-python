@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Coordinates for Berlin, Germany
-MY_LAT = 55.516651
-MY_LONG = 18.335524
+MY_LAT = 52.5200
+MY_LONG = 13.4050
 
 # OpenWeatherMap 5-day / 3-hour forecast endpoint
 OWM_ENDPOINT = 'https://api.openweathermap.org/data/2.5/forecast'
