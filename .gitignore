@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .env
 *.sqlite
+*.json
 taskinfo.yaml
 taskinfo
 .DS_Store
