@@ -1,0 +1,32 @@
+name: Day 39 - Flight Deal Finder (Manual)
+
+on:
+  workflow_dispatch: # Allows manual trigger from GitHub web interface
+
+jobs:
+  run-flight-finder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Flight Deal Finder
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          SHEETY_FLIGHT_BEARER_TOKEN: ${{ secrets.SHEETY_FLIGHT_BEARER_TOKEN }}
+          TELEGRAM_FLIGHT_BOT_TOKEN: ${{ secrets.TELEGRAM_FLIGHT_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          cd Day-39/flight-deals
+          python main.py
