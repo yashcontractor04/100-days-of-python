@@ -1,6 +1,5 @@
 import time
-import turtle
-from turtle import Turtle, Screen
+from turtle import Screen
 
 from scoreboard import Scoreboard
 from ball import Ball
@@ -54,6 +53,7 @@ while is_game_on:
     # Left wall breach -> Right player scores
     if ball.xcor() < -380:
         ball.refresh()
+        speed = 0.1
         scoreboard.r_point()
 
 screen.exitonclick()

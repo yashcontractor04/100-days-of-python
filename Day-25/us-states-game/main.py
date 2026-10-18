@@ -29,7 +29,7 @@ while len(guessed_states) < 50:
         break
 
     # Valid guess handling: verify match and avoid duplicate entries
-    if answer_state in all_states:
+    if answer_state in all_states and answer_state not in guessed_states:
         guessed_states.append(answer_state)
 
         # Instantiate dedicated text-writing turtle
