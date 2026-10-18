@@ -51,3 +51,5 @@
 | Day 37 | [Pixela Habit Tracker](./Day-37/habit-tracker) | `API`, `requests`, `POST/PUT/DELETE`, `HTTP Headers` | Done |
 
 | Day 38 | [Workout Tracker](./Day-38/workout-tracker) | `NLP API`, `Nutritionix`, `Sheety`, `Bearer Token`, `requests` | Done |
+
+| Day 39 | [Flight Deal Finder](./Day-39/flight-deals) | `SerpAPI`, `Google Flights`, `Sheety`, `Telegram Bot API`, `requests-cache` | Done |
