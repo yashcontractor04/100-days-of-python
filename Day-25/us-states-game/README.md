@@ -1,15 +1,9 @@
-# U.S. States Educational Map Game
-An interactive geographical quiz built with Python's `turtle` and `pandas` libraries. Players identify U.S. states on an interactive map image, with automatic coordinate rendering and export of unlearned states to a study CSV.
+# Day 25: U.S. States Game
 
-### Tech / Concepts
-* Tabular data parsing, filtering, and serialization with `pandas`
-* Coordinate mapping onto a custom GUI background canvas (`turtle.Screen.addshape`)
-* List comprehension for array difference calculation
-* Dynamic text placement using scalar series extraction (`.item()`)
+Can you name all 50 U.S. states? Type a state name and, if it is right, it is written on the map in the correct spot. Typing the same state twice only counts once.
 
-### Quickstart
-1. Install dependencies:
-   `pip install pandas`
-2. Run the game:
-   `python main.py`
-3. Type `Exit` at any prompt to generate `states_to_learn.csv`.
+Type `Exit` to stop early. The states you missed are saved in `states_to_learn.csv` so you can study them.
+
+The state names and their positions on the map are in `50_states.csv`. The pandas library reads that file and writes the list of missed states. Keep `blank_states_img.gif` and `50_states.csv` in this folder.
+
+To run it: `python main.py`

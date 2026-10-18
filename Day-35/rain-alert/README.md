@@ -1,19 +1,17 @@
-# Automated Rain Alert with Telegram Bot API
-An automated meteorological alert script that queries the OpenWeatherMap 5-day/3-hour forecast API for precipitation condition codes (< 700) across the upcoming 12 hours. Triggers push notifications via the Telegram Bot API over HTTPS.
+# Day 35: Rain Alert
 
-### Tech / Concepts
-* REST API parameter handling & pagination using `requests`
-* Weather condition classification using OpenWeather standard condition codes
-* Automated push messaging with Telegram Bot HTTP endpoints (`sendMessage`)
-* Secure credential management via `dotenv` and environment variables
+Checks the weather forecast and sends you a Telegram message if rain is coming. It asks OpenWeatherMap for the next 12 hours (four forecasts, 3 hours apart). If any of them has a weather code under 700, which means thunderstorm, drizzle, rain or snow, it tells you to take an umbrella.
 
-### Quickstart
-1. Install dependencies from the repository root:
-   `pip install -r requirements.txt`
-2. Populate `.env`:
-   ```text
-   OWM_API_KEY=your_openweathermap_api_key
-   TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-   TELEGRAM_CHAT_ID=your_telegram_numeric_chat_id
-3. Run the script:
-   `python main.py`
+My location is set at the top of `main.py` (`MY_LAT` and `MY_LONG`) and is currently Berlin.
+
+## Setup
+
+You need a free OpenWeatherMap key and a Telegram bot (you make one by chatting with Telegram's BotFather). You also need the number ID of your chat with the bot. Put them in a file called `.env` in this folder:
+
+```text
+OWM_API_KEY=your_openweathermap_key
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHAT_ID=your_chat_id
+```
+
+To run it: `python main.py`. It checks once and then stops. It isn't set up to run on a schedule.

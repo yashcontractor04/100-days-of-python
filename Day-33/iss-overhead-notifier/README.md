@@ -1,18 +1,23 @@
-# ISS Overhead Nighttime Notifier
-A background monitoring service that consumes the Open-Notify and Sunrise-Sunset REST APIs to calculate whether the International Space Station (ISS) is currently flying within viewing range of Berlin (+/- 5 degrees) during hours of darkness. Dispatches automated email alerts via `smtplib` over TLS.
+# Day 33: ISS Overhead Notifier
 
-### Tech / Concepts
-* REST API consumption with query parameters using `requests`
-* ISO 8601 timestamp parsing and UTC temporal alignment using `datetime.timezone.utc`
-* Coordinate proximity threshold calculations (`abs(diff) <= 5`)
-* TLS email dispatch with `smtplib` using shared credentials (`MY_EMAIL`, `MY_EMAIL_PASSWORD`)
+The ISS (International Space Station) flies around the Earth. This program emails you when it is above you at night, so you can go outside and see it.
 
-### Quickstart
-1. Ensure the root `requirements.txt` dependencies are installed:
-   `pip install -r requirements.txt`
-2. Create or verify your local `.env`:
-   ```text
-   MY_EMAIL=your_email@gmail.com
-   MY_EMAIL_PASSWORD=your_google_app_password
-3. Run the service:
-   `python main.py`
+Every 60 seconds it checks two things:
+
+1. Is the ISS close to my location (within 5 degrees in each direction)? The position comes from the Open Notify website.
+2. Is it dark outside right now? The sunrise and sunset times come from sunrise-sunset.org.
+
+If both are true, it sends you an email. My location is set at the top of `main.py` (`MY_LAT` and `MY_LONG`) and is currently Berlin. Neither website needs a key.
+
+## Setup
+
+Create a file called `.env` in this folder:
+
+```text
+MY_EMAIL=you@gmail.com
+MY_EMAIL_PASSWORD=your_gmail_app_password
+```
+
+Use a Gmail "app password" (a special password just for apps), not your normal one.
+
+To run it: `python main.py`. It keeps running until you press Ctrl+C. If there is a network problem, it prints the error and tries again.

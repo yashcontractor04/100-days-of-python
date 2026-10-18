@@ -1,10 +1,5 @@
-# Hirst Dot Painting Generator
-A Python Turtle graphics program that generates Damien Hirst-style spot art grids using randomized RGB color palettes.
+# Day 18: Hirst Painting
 
-### Tech / Concepts
-* Python Turtle Graphics (`turtle`, `Screen`)
-* 2D Coordinate space mapping (`setworldcoordinates`, `teleport`)
-* Custom RGB color-mode manipulation
+Draws a grid of 10 by 10 coloured dots, like a Damien Hirst spot painting. It uses Python's `turtle` module, which draws on the screen. Each dot gets a random colour from a list at the top of the file. Click the window to close it.
 
-### Quickstart
-`python main.py`
+To run it: `python main.py`

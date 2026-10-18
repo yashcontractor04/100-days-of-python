@@ -1,16 +1,9 @@
 import random
-import time
 from turtle import Turtle
 
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
-
-
-def generate_random_cars():
-    while True:
-        time.sleep(0.1)
-        car = CarManager()
 
 
 class CarManager:
@@ -33,3 +26,9 @@ class CarManager:
         """Translate vehicles leftwards at velocities scaling with game progression."""
         for car in self.all_cars:
             car.backward(STARTING_MOVE_DISTANCE + level * MOVE_INCREMENT)
+
+        # Remove cars that have left the screen so the list doesn't grow forever
+        for car in self.all_cars[:]:
+            if car.xcor() < -320:
+                car.hideturtle()
+                self.all_cars.remove(car)

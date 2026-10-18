@@ -9,8 +9,8 @@ import smtplib
 load_dotenv()
 
 # Coordinates for Berlin, Germany
-MY_LAT = 55.516651
-MY_LONG = 18.335524
+MY_LAT = 52.5200
+MY_LONG = 13.4050
 
 # Shared email credentials
 MY_EMAIL = os.getenv("MY_EMAIL")
@@ -57,7 +57,7 @@ def send_notification() -> None:
     """Dispatches email notification alerting user to look up."""
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
-        connection.login(user=MY_EMAIL, password=MY_EMAIL_PASSWORD)
+        connection.login(user=MY_EMAIL, password=PASSWORD)
         message = (
             f"From: {MY_EMAIL}\r\n"
             f"To: {MY_EMAIL}\r\n"
