@@ -7,7 +7,7 @@ Every project has its own folder with a README that explains what it does and ho
 ## A few to look at first
 
 - [Day 36, Stock News Alert](Day-36/stock-news): checks how much a stock moved in a day and sends news about it to Telegram if the move is big. It runs by itself on GitHub Actions, and the API keys are kept secret.
-- [Day 39, Flight Deal Finder](Day-39/flight-deals): looks for cheaper flights. A Google Sheet holds the routes, SerpAPI gives the prices and Telegram sends the alerts.
+- [Day 40, Flight Club](Day-40/flight-club): looks for cheaper flights. A Google Sheet holds the routes and user emails, SerpAPI gives the prices, Telegram sends me alerts and Gmail emails everyone on the list.
 - [Day 32, Birthday Wisher](Day-32/birthday-wisher): sends birthday emails and runs every day on GitHub Actions. The private birthday list is stored as a secret, so it isn't in the repo.
 - [Day 38, Workout Tracker](Day-38/workout-tracker): turns a sentence like "ran 3 miles" into rows in a Google Sheet.
 
@@ -42,6 +42,7 @@ Every project has its own folder with a README that explains what it does and ho
 | 37 | [Habit Tracker](Day-37/habit-tracker) | Saves daily habits to a Pixela graph. | requests |
 | 38 | [Workout Tracker](Day-38/workout-tracker) | Type your workout and it is saved in a Google Sheet. | requests |
 | 39 | [Flight Deal Finder](Day-39/flight-deals) | Finds cheaper flights for routes in a sheet and tells me. | requests, requests-cache, Telegram, GitHub Actions |
+| 40 | [Flight Deal Finder & Flight Club](Day-40/flight-club) | Finds cheaper flights and emails users in a sheet. | requests, requests-cache, Telegram, smtplib |
 
 ## How to run a project
 
