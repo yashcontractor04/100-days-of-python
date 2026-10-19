@@ -27,6 +27,7 @@ def track_workout():
 
     # Query Nutritionix API for natural language processing
     api_headers = {
+        "Content-Type": "application/json",
         'x-app-id': APP_ID,
         'x-app-key': API_KEY,
     }
