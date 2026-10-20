@@ -43,7 +43,7 @@ Every project has its own folder with a README that explains what it does and ho
 | 38 | [Workout Tracker](Day-38/workout-tracker) | Type your workout and it is saved in a Google Sheet. | requests |
 | 39 | [Flight Deal Finder](Day-39/flight-deals) | Finds cheaper flights for routes in a sheet and tells me. | requests, requests-cache, Telegram, GitHub Actions |
 | 40 | [Flight Deal Finder & Flight Club](Day-40/flight-club) | Finds cheaper flights and emails users in a sheet. | requests, requests-cache, Telegram, smtplib |
-| 45 | [Top 100 Movies Scraper](Day-45/scrape-movie) | Scrapes Empire's top 100 movies list and saves it to a file. | requests, requests-cache, beautifulsoup4 |
+| 45 | [Top 100 Movies Scraper](Day-45/scrape_movie) | Scrapes Empire's top 100 movies list and saves it to a file. | requests, requests-cache, beautifulsoup4 |
 
 
 ## How to run a project
