@@ -44,6 +44,7 @@ Every project has its own folder with a README that explains what it does and ho
 | 39 | [Flight Deal Finder](Day-39/flight-deals) | Finds cheaper flights for routes in a sheet and tells me. | requests, requests-cache, Telegram, GitHub Actions |
 | 40 | [Flight Deal Finder & Flight Club](Day-40/flight-club) | Finds cheaper flights and emails users in a sheet. | requests, requests-cache, Telegram, smtplib |
 | 45 | [Top 100 Movies Scraper](Day-45/scrape_movie) | Scrapes Empire's top 100 movies list and saves it to a file. | requests, requests-cache, beautifulsoup4 |
+| 47 | [Amazon Price Tracker](Day-47/amazon-price-tracker) | Sends an email alert when an Amazon item drops below a target price. | requests, beautifulsoup4, smtplib |
 
 
 ## How to run a project
