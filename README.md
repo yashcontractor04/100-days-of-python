@@ -47,6 +47,7 @@ Every project has its own folder with a README that explains what it does and ho
 | 46 | [Musical Time Machine](Day-46/musical-time-machine) | Creates a Spotify playlist of the top 100 songs from a specific date. | beautifulsoup4, spotipy |
 | 47 | [Amazon Price Tracker](Day-47/amazon-price-tracker) | Sends an email alert when an Amazon item drops below a target price. | requests, beautifulsoup4, smtplib |
 | 48 | [Cookie Clicker Bot](Day-48/cookie-clicker-bot) | Automates playing Cookie Clicker and saves game progress to a file. | selenium |
+| 49 | [Gym Booking Bot](Day-49/gym-booking) | Automates booking gym classes on target days and verifies bookings. | selenium, python-dotenv |
 
 
 ## How to run a project
