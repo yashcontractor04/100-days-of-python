@@ -48,6 +48,7 @@ Every project has its own folder with a README that explains what it does and ho
 | 47 | [Amazon Price Tracker](Day-47/amazon-price-tracker) | Sends an email alert when an Amazon item drops below a target price. | requests, beautifulsoup4, smtplib |
 | 48 | [Cookie Clicker Bot](Day-48/cookie-clicker-bot) | Automates playing Cookie Clicker and saves game progress to a file. | selenium |
 | 49 | [Gym Booking Bot](Day-49/gym-booking-bot) | Automates booking gym classes on target days and verifies bookings. | selenium, python-dotenv |
+| 50 | [Auto Swiping Bot](Day-50/tinder-swiping-bot) | Automates web login via popup and automatically likes profiles. | selenium |
 
 
 ## How to run a project
